@@ -47,6 +47,8 @@ with open(path_dicionario_embeddings, 'rb') as file:
 
 embedding_frase_selecionada = dicionario_embeddings[user_input]
 
+embedding_frase_selecionada = pd.DataFrame(embedding_frase_selecionada.reshape(1,100))
+
 cluster_identificado = modelo_kmeans_carregado.predict(embedding_frase_selecionada)[0]
 
 respostas_dict = {0:"Pedimos desculpas pelos seus problemas no site. Salvamos as informações referentes aos seu pedido e em breve retornaremos com a solução",
