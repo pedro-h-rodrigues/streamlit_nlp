@@ -1,0 +1,9 @@
+matplotlib==3.3.4
+pandas==1.2.4
+Unidecode==1.2.0
+spacy==2.2.4
+numpy==1.20.1
+nltk==3.6.1
+streamlit==0.88.0
+gensim==4.1.2
+scikit_learn==0.24.2
